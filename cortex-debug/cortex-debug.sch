@@ -1,0 +1,428 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Saleae Logic to PMOD + Picoblade adapter"
+Date "2020-07-28"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L agg:CONN_02x04 J2
+U 1 1 5F1FA683
+P 4250 3650
+F 0 "J2" H 4150 3750 50  0000 L CNN
+F 1 "SALEAE_0-3" H 4200 3250 50  0000 C CNN
+F 2 "agg:DIL-254P-08" H 4250 3650 50  0001 C CNN
+F 3 "" H 4250 3650 50  0001 C CNN
+F 4 "2856692" H 4250 3650 50  0001 C CNN "Farnell"
+	1    4250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:CONN_02x04 J6
+U 1 1 5F1FADE6
+P 4250 4450
+F 0 "J6" H 4150 4550 50  0000 L CNN
+F 1 "SALEAE_4-7" H 4200 4050 50  0000 C CNN
+F 2 "agg:DIL-254P-08" H 4250 4450 50  0001 C CNN
+F 3 "" H 4250 4450 50  0001 C CNN
+F 4 "2856692" H 4250 4450 50  0001 C CNN "Farnell"
+	1    4250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:GND #PWR04
+U 1 1 5F1FB83A
+P 3950 4100
+F 0 "#PWR04" H 3820 4140 50  0001 L CNN
+F 1 "GND" H 3950 4000 50  0000 C CNN
+F 2 "" H 3950 4100 50  0001 C CNN
+F 3 "" H 3950 4100 50  0001 C CNN
+	1    3950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4100 3950 3950
+Wire Wire Line
+	3950 3650 4050 3650
+Wire Wire Line
+	4050 3750 3950 3750
+Connection ~ 3950 3750
+Wire Wire Line
+	3950 3750 3950 3650
+Wire Wire Line
+	3950 3850 4050 3850
+Connection ~ 3950 3850
+Wire Wire Line
+	3950 3850 3950 3750
+Wire Wire Line
+	4050 3950 3950 3950
+Connection ~ 3950 3950
+Wire Wire Line
+	3950 3950 3950 3850
+Wire Wire Line
+	4350 3650 4450 3650
+Wire Wire Line
+	4350 3750 4450 3750
+Wire Wire Line
+	4350 3850 4450 3850
+Wire Wire Line
+	4350 3950 4450 3950
+$Comp
+L agg:GND #PWR012
+U 1 1 5F2016B0
+P 3950 4900
+F 0 "#PWR012" H 3820 4940 50  0001 L CNN
+F 1 "GND" H 3950 4800 50  0000 C CNN
+F 2 "" H 3950 4900 50  0001 C CNN
+F 3 "" H 3950 4900 50  0001 C CNN
+	1    3950 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4900 3950 4750
+Wire Wire Line
+	3950 4450 4050 4450
+Wire Wire Line
+	4050 4550 3950 4550
+Connection ~ 3950 4550
+Wire Wire Line
+	3950 4550 3950 4450
+Wire Wire Line
+	3950 4650 4050 4650
+Connection ~ 3950 4650
+Wire Wire Line
+	3950 4650 3950 4550
+Wire Wire Line
+	4050 4750 3950 4750
+Connection ~ 3950 4750
+Wire Wire Line
+	3950 4750 3950 4650
+Wire Wire Line
+	4350 4750 4450 4750
+$Comp
+L agg:CONN_02x04 J1
+U 1 1 5F21C93B
+P 3100 3650
+F 0 "J1" H 3000 3750 50  0000 L CNN
+F 1 "SALEAE_0-3" H 3050 3250 50  0000 C CNN
+F 2 "agg:DIL-254P-08" H 3100 3650 50  0001 C CNN
+F 3 "" H 3100 3650 50  0001 C CNN
+F 4 "1668343" H 3100 3650 50  0001 C CNN "Farnell"
+	1    3100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:CONN_02x04 J5
+U 1 1 5F21C945
+P 3100 4450
+F 0 "J5" H 3000 4550 50  0000 L CNN
+F 1 "SALEAE_4-7" H 3050 4050 50  0000 C CNN
+F 2 "agg:DIL-254P-08" H 3100 4450 50  0001 C CNN
+F 3 "" H 3100 4450 50  0001 C CNN
+F 4 "1668343" H 3100 4450 50  0001 C CNN "Farnell"
+	1    3100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:GND #PWR03
+U 1 1 5F21C94F
+P 2800 4100
+F 0 "#PWR03" H 2670 4140 50  0001 L CNN
+F 1 "GND" H 2800 4000 50  0000 C CNN
+F 2 "" H 2800 4100 50  0001 C CNN
+F 3 "" H 2800 4100 50  0001 C CNN
+	1    2800 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4100 2800 3950
+Wire Wire Line
+	2800 3650 2900 3650
+Wire Wire Line
+	2900 3750 2800 3750
+Connection ~ 2800 3750
+Wire Wire Line
+	2800 3750 2800 3650
+Wire Wire Line
+	2800 3850 2900 3850
+Connection ~ 2800 3850
+Wire Wire Line
+	2800 3850 2800 3750
+Wire Wire Line
+	2900 3950 2800 3950
+Connection ~ 2800 3950
+Wire Wire Line
+	2800 3950 2800 3850
+Wire Wire Line
+	3200 3650 3300 3650
+Wire Wire Line
+	3200 3750 3300 3750
+Wire Wire Line
+	3200 3850 3300 3850
+Wire Wire Line
+	3200 3950 3300 3950
+$Comp
+L agg:GND #PWR011
+U 1 1 5F21C96C
+P 2800 4900
+F 0 "#PWR011" H 2670 4940 50  0001 L CNN
+F 1 "GND" H 2800 4800 50  0000 C CNN
+F 2 "" H 2800 4900 50  0001 C CNN
+F 3 "" H 2800 4900 50  0001 C CNN
+	1    2800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4900 2800 4750
+Wire Wire Line
+	2800 4450 2900 4450
+Wire Wire Line
+	2900 4550 2800 4550
+Connection ~ 2800 4550
+Wire Wire Line
+	2800 4550 2800 4450
+Wire Wire Line
+	2800 4650 2900 4650
+Connection ~ 2800 4650
+Wire Wire Line
+	2800 4650 2800 4550
+Wire Wire Line
+	2900 4750 2800 4750
+Connection ~ 2800 4750
+Wire Wire Line
+	2800 4750 2800 4650
+Wire Wire Line
+	3200 4750 3300 4750
+Text Notes 2750 3300 0    50   ~ 0
+R/A sockets for\ndirect connection\nto Saleae
+Text Notes 3900 3300 0    50   ~ 0
+Vertical pins for\ncable connection\nto Saleae
+$Comp
+L agg:SWD P1
+U 1 1 5F1FE927
+P 5750 3800
+F 0 "P1" H 5350 4100 50  0000 L CNN
+F 1 "SWD" H 5350 3500 50  0000 L CNN
+F 2 "agg:FTSH-105-01-L-DV-K" H 5350 3400 50  0001 L CNN
+F 3 "" H 6100 3600 50  0001 C CNN
+F 4 "" H 5350 3300 50  0001 L CNN "Toby"
+F 5 "2856437" H 5750 3800 50  0001 C CNN "Farnell"
+	1    5750 3800
+	1    0    0    -1  
+$EndComp
+Text Notes 5550 3300 0    50   ~ 0
+Cortex Debug\nconnectors
+$Comp
+L agg:GND #PWR0101
+U 1 1 5F200D4B
+P 5200 4050
+F 0 "#PWR0101" H 5070 4090 50  0001 L CNN
+F 1 "GND" H 5200 3950 50  0000 C CNN
+F 2 "" H 5200 4050 50  0001 C CNN
+F 3 "" H 5200 4050 50  0001 C CNN
+	1    5200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4050 5200 4000
+Wire Wire Line
+	5200 3700 5250 3700
+Wire Wire Line
+	5250 3800 5200 3800
+Connection ~ 5200 3800
+Wire Wire Line
+	5200 3800 5200 3700
+Wire Wire Line
+	5250 4000 5200 4000
+Connection ~ 5200 4000
+Wire Wire Line
+	5200 4000 5200 3800
+$Comp
+L agg:3v3 #PWR0102
+U 1 1 5F203990
+P 5200 3550
+F 0 "#PWR0102" H 5200 3660 50  0001 L CNN
+F 1 "3v3" H 5200 3640 50  0000 C CNN
+F 2 "" H 5200 3550 50  0001 C CNN
+F 3 "" H 5200 3550 50  0001 C CNN
+	1    5200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3550 5200 3600
+Wire Wire Line
+	5200 3600 5250 3600
+Wire Wire Line
+	6250 3600 6350 3600
+Wire Wire Line
+	6250 3700 6350 3700
+Wire Wire Line
+	6250 3800 6350 3800
+Wire Wire Line
+	6250 3900 6350 3900
+Wire Wire Line
+	6250 4000 6350 4000
+Text Label 6350 3600 0    50   ~ 0
+SWDIO
+Text Label 6350 3700 0    50   ~ 0
+SWCLK
+Text Label 6350 3800 0    50   ~ 0
+SWO
+Text Label 6350 3900 0    50   ~ 0
+JTDI
+Text Label 6350 4000 0    50   ~ 0
+~RESET
+$Comp
+L agg:SWD P2
+U 1 1 5F20A8D4
+P 5750 4650
+F 0 "P2" H 5350 4950 50  0000 L CNN
+F 1 "SWD" H 5350 4350 50  0000 L CNN
+F 2 "agg:FTSH-105-01-L-DV-K" H 5350 4250 50  0001 L CNN
+F 3 "" H 6100 4450 50  0001 C CNN
+F 4 "" H 5350 4150 50  0001 L CNN "Toby"
+F 5 "2856437" H 5750 4650 50  0001 C CNN "Farnell"
+	1    5750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:GND #PWR0103
+U 1 1 5F20A8DE
+P 5200 4900
+F 0 "#PWR0103" H 5070 4940 50  0001 L CNN
+F 1 "GND" H 5200 4800 50  0000 C CNN
+F 2 "" H 5200 4900 50  0001 C CNN
+F 3 "" H 5200 4900 50  0001 C CNN
+	1    5200 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4900 5200 4850
+Wire Wire Line
+	5200 4550 5250 4550
+Wire Wire Line
+	5250 4650 5200 4650
+Connection ~ 5200 4650
+Wire Wire Line
+	5200 4650 5200 4550
+Wire Wire Line
+	5250 4850 5200 4850
+Connection ~ 5200 4850
+Wire Wire Line
+	5200 4850 5200 4650
+$Comp
+L agg:3v3 #PWR0104
+U 1 1 5F20A8F0
+P 5200 4400
+F 0 "#PWR0104" H 5200 4510 50  0001 L CNN
+F 1 "3v3" H 5200 4490 50  0000 C CNN
+F 2 "" H 5200 4400 50  0001 C CNN
+F 3 "" H 5200 4400 50  0001 C CNN
+	1    5200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4400 5200 4450
+Wire Wire Line
+	5200 4450 5250 4450
+Wire Wire Line
+	6250 4450 6350 4450
+Wire Wire Line
+	6250 4550 6350 4550
+Wire Wire Line
+	6250 4650 6350 4650
+Wire Wire Line
+	6250 4750 6350 4750
+Wire Wire Line
+	6250 4850 6350 4850
+Text Label 6350 4450 0    50   ~ 0
+SWDIO
+Text Label 6350 4550 0    50   ~ 0
+SWCLK
+Text Label 6350 4650 0    50   ~ 0
+SWO
+Text Label 6350 4750 0    50   ~ 0
+JTDI
+Text Label 6350 4850 0    50   ~ 0
+~RESET
+$Comp
+L agg:PWR #FLG0101
+U 1 1 5F20E8A6
+P 5150 3600
+F 0 "#FLG0101" H 5150 3760 50  0001 C CNN
+F 1 "PWR" H 5150 3690 50  0001 C CNN
+F 2 "" H 5150 3600 50  0001 C CNN
+F 3 "" H 5150 3600 50  0001 C CNN
+	1    5150 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 3600 5200 3600
+Connection ~ 5200 3600
+$Comp
+L agg:PWR #FLG0102
+U 1 1 5F210B43
+P 5150 3700
+F 0 "#FLG0102" H 5150 3860 50  0001 C CNN
+F 1 "PWR" H 5150 3790 50  0001 C CNN
+F 2 "" H 5150 3700 50  0001 C CNN
+F 3 "" H 5150 3700 50  0001 C CNN
+	1    5150 3700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5200 3700
+Wire Wire Line
+	5150 3700 5200 3700
+Text Label 4450 3950 0    50   ~ 0
+SWDIO
+Text Label 4450 3850 0    50   ~ 0
+SWCLK
+Text Label 4450 3750 0    50   ~ 0
+SWO
+Text Label 4450 3650 0    50   ~ 0
+JTDI
+Text Label 4450 4750 0    50   ~ 0
+~RESET
+Wire Wire Line
+	3200 4650 3300 4650
+Wire Wire Line
+	3200 4550 3300 4550
+Wire Wire Line
+	3200 4450 3300 4450
+Wire Wire Line
+	4350 4650 4450 4650
+Wire Wire Line
+	4350 4550 4450 4550
+Wire Wire Line
+	4350 4450 4450 4450
+Text Label 4450 4450 0    50   ~ 0
+CH7
+Text Label 4450 4550 0    50   ~ 0
+CH6
+Text Label 4450 4650 0    50   ~ 0
+CH5
+Text Label 3300 4450 0    50   ~ 0
+CH7
+Text Label 3300 4550 0    50   ~ 0
+CH6
+Text Label 3300 4650 0    50   ~ 0
+CH5
+Text Label 3300 4750 0    50   ~ 0
+~RESET
+Text Label 3300 3950 0    50   ~ 0
+SWDIO
+Text Label 3300 3850 0    50   ~ 0
+SWCLK
+Text Label 3300 3750 0    50   ~ 0
+SWO
+Text Label 3300 3650 0    50   ~ 0
+JTDI
+$EndSCHEMATC

@@ -1,0 +1,436 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Saleae Logic to PMOD + Picoblade adapter"
+Date "2020-07-28"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L agg:CONN_02x06 J4
+U 1 1 5F1F6E95
+P 6750 3950
+F 0 "J4" H 6650 4050 50  0000 L CNN
+F 1 "PMOD" H 6700 3350 50  0000 C CNN
+F 2 "agg:DIL-254P-12" H 6750 3950 50  0001 C CNN
+F 3 "" H 6750 3950 50  0001 C CNN
+F 4 "2032721" H 6750 3950 50  0001 C CNN "Farnell"
+	1    6750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3950 6450 3950
+Wire Wire Line
+	6550 4050 6450 4050
+Wire Wire Line
+	6550 4150 6450 4150
+Wire Wire Line
+	6550 4250 6450 4250
+Wire Wire Line
+	6550 4350 6450 4350
+Wire Wire Line
+	6850 3950 6950 3950
+Wire Wire Line
+	6850 4050 6950 4050
+Wire Wire Line
+	6850 4150 6950 4150
+Wire Wire Line
+	6850 4250 6950 4250
+Wire Wire Line
+	6850 4350 6950 4350
+Text Label 6950 3950 0    50   ~ 0
+PMOD0
+Text Label 6950 4050 0    50   ~ 0
+PMOD1
+Text Label 6950 4150 0    50   ~ 0
+PMOD2
+Text Label 6950 4250 0    50   ~ 0
+PMOD3
+Text Label 6450 3950 2    50   ~ 0
+PMOD4
+Text Label 6450 4050 2    50   ~ 0
+PMOD5
+Text Label 6450 4150 2    50   ~ 0
+PMOD6
+Text Label 6450 4250 2    50   ~ 0
+PMOD7
+$Comp
+L agg:GND #PWR05
+U 1 1 5F1F889D
+P 6450 4350
+F 0 "#PWR05" H 6320 4390 50  0001 L CNN
+F 1 "GND" H 6450 4250 50  0000 C CNN
+F 2 "" H 6450 4350 50  0001 C CNN
+F 3 "" H 6450 4350 50  0001 C CNN
+	1    6450 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L agg:GND #PWR06
+U 1 1 5F1F8C73
+P 6950 4350
+F 0 "#PWR06" H 6820 4390 50  0001 L CNN
+F 1 "GND" H 6950 4250 50  0000 C CNN
+F 2 "" H 6950 4350 50  0001 C CNN
+F 3 "" H 6950 4350 50  0001 C CNN
+	1    6950 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L agg:CONN_02x04 J2
+U 1 1 5F1FA683
+P 4250 3650
+F 0 "J2" H 4150 3750 50  0000 L CNN
+F 1 "SALEAE_0-3" H 4200 3250 50  0000 C CNN
+F 2 "agg:DIL-254P-08" H 4250 3650 50  0001 C CNN
+F 3 "" H 4250 3650 50  0001 C CNN
+F 4 "2856692" H 4250 3650 50  0001 C CNN "Farnell"
+	1    4250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:CONN_02x04 J6
+U 1 1 5F1FADE6
+P 4250 4450
+F 0 "J6" H 4150 4550 50  0000 L CNN
+F 1 "SALEAE_4-7" H 4200 4050 50  0000 C CNN
+F 2 "agg:DIL-254P-08" H 4250 4450 50  0001 C CNN
+F 3 "" H 4250 4450 50  0001 C CNN
+F 4 "2856692" H 4250 4450 50  0001 C CNN "Farnell"
+	1    4250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:GND #PWR04
+U 1 1 5F1FB83A
+P 3950 4100
+F 0 "#PWR04" H 3820 4140 50  0001 L CNN
+F 1 "GND" H 3950 4000 50  0000 C CNN
+F 2 "" H 3950 4100 50  0001 C CNN
+F 3 "" H 3950 4100 50  0001 C CNN
+	1    3950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4100 3950 3950
+Wire Wire Line
+	3950 3650 4050 3650
+Wire Wire Line
+	4050 3750 3950 3750
+Connection ~ 3950 3750
+Wire Wire Line
+	3950 3750 3950 3650
+Wire Wire Line
+	3950 3850 4050 3850
+Connection ~ 3950 3850
+Wire Wire Line
+	3950 3850 3950 3750
+Wire Wire Line
+	4050 3950 3950 3950
+Connection ~ 3950 3950
+Wire Wire Line
+	3950 3950 3950 3850
+Text Label 4450 3950 0    50   ~ 0
+PMOD0
+Text Label 4450 3850 0    50   ~ 0
+PMOD1
+Text Label 4450 3750 0    50   ~ 0
+PMOD2
+Text Label 4450 3650 0    50   ~ 0
+PMOD3
+Wire Wire Line
+	4350 3650 4450 3650
+Wire Wire Line
+	4350 3750 4450 3750
+Wire Wire Line
+	4350 3850 4450 3850
+Wire Wire Line
+	4350 3950 4450 3950
+$Comp
+L agg:GND #PWR012
+U 1 1 5F2016B0
+P 3950 4900
+F 0 "#PWR012" H 3820 4940 50  0001 L CNN
+F 1 "GND" H 3950 4800 50  0000 C CNN
+F 2 "" H 3950 4900 50  0001 C CNN
+F 3 "" H 3950 4900 50  0001 C CNN
+	1    3950 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4900 3950 4750
+Wire Wire Line
+	3950 4450 4050 4450
+Wire Wire Line
+	4050 4550 3950 4550
+Connection ~ 3950 4550
+Wire Wire Line
+	3950 4550 3950 4450
+Wire Wire Line
+	3950 4650 4050 4650
+Connection ~ 3950 4650
+Wire Wire Line
+	3950 4650 3950 4550
+Wire Wire Line
+	4050 4750 3950 4750
+Connection ~ 3950 4750
+Wire Wire Line
+	3950 4750 3950 4650
+Text Label 4450 4750 0    50   ~ 0
+PMOD4
+Text Label 4450 4650 0    50   ~ 0
+PMOD5
+Text Label 4450 4550 0    50   ~ 0
+PMOD6
+Text Label 4450 4450 0    50   ~ 0
+PMOD7
+Wire Wire Line
+	4350 4450 4450 4450
+Wire Wire Line
+	4350 4550 4450 4550
+Wire Wire Line
+	4350 4650 4450 4650
+Wire Wire Line
+	4350 4750 4450 4750
+$Comp
+L agg:CONN_01x07 J3
+U 1 1 5F208212
+P 5600 4300
+F 0 "J3" H 5550 4400 50  0000 L CNN
+F 1 "SPI" V 5500 4000 50  0000 C CNN
+F 2 "agg:MOLEX-PICOBLADE-53398-0771" H 5600 4300 50  0001 C CNN
+F 3 "" H 5600 4300 50  0001 C CNN
+F 4 "9786368" H 5600 4300 50  0001 C CNN "Farnell"
+	1    5600 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L agg:GND #PWR010
+U 1 1 5F20AEA4
+P 5450 4950
+F 0 "#PWR010" H 5320 4990 50  0001 L CNN
+F 1 "GND" H 5450 4850 50  0000 C CNN
+F 2 "" H 5450 4950 50  0001 C CNN
+F 3 "" H 5450 4950 50  0001 C CNN
+	1    5450 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4950 5450 4900
+Wire Wire Line
+	5450 4900 5500 4900
+Text Label 5400 4400 2    50   ~ 0
+PMOD0
+Text Label 5400 4500 2    50   ~ 0
+PMOD1
+Text Label 5400 4600 2    50   ~ 0
+PMOD2
+Text Label 5400 4700 2    50   ~ 0
+PMOD3
+Text Label 5400 4800 2    50   ~ 0
+PMOD4
+Wire Wire Line
+	5400 4400 5500 4400
+Wire Wire Line
+	5400 4500 5500 4500
+Wire Wire Line
+	5400 4600 5500 4600
+Wire Wire Line
+	5400 4700 5500 4700
+Wire Wire Line
+	5400 4800 5500 4800
+$Comp
+L agg:CONN_02x04 J1
+U 1 1 5F21C93B
+P 3100 3650
+F 0 "J1" H 3000 3750 50  0000 L CNN
+F 1 "SALEAE_0-3" H 3050 3250 50  0000 C CNN
+F 2 "agg:DIL-254P-08" H 3100 3650 50  0001 C CNN
+F 3 "" H 3100 3650 50  0001 C CNN
+F 4 "1668343" H 3100 3650 50  0001 C CNN "Farnell"
+	1    3100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:CONN_02x04 J5
+U 1 1 5F21C945
+P 3100 4450
+F 0 "J5" H 3000 4550 50  0000 L CNN
+F 1 "SALEAE_4-7" H 3050 4050 50  0000 C CNN
+F 2 "agg:DIL-254P-08" H 3100 4450 50  0001 C CNN
+F 3 "" H 3100 4450 50  0001 C CNN
+F 4 "1668343" H 3100 4450 50  0001 C CNN "Farnell"
+	1    3100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:GND #PWR03
+U 1 1 5F21C94F
+P 2800 4100
+F 0 "#PWR03" H 2670 4140 50  0001 L CNN
+F 1 "GND" H 2800 4000 50  0000 C CNN
+F 2 "" H 2800 4100 50  0001 C CNN
+F 3 "" H 2800 4100 50  0001 C CNN
+	1    2800 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4100 2800 3950
+Wire Wire Line
+	2800 3650 2900 3650
+Wire Wire Line
+	2900 3750 2800 3750
+Connection ~ 2800 3750
+Wire Wire Line
+	2800 3750 2800 3650
+Wire Wire Line
+	2800 3850 2900 3850
+Connection ~ 2800 3850
+Wire Wire Line
+	2800 3850 2800 3750
+Wire Wire Line
+	2900 3950 2800 3950
+Connection ~ 2800 3950
+Wire Wire Line
+	2800 3950 2800 3850
+Text Label 3300 3950 0    50   ~ 0
+PMOD0
+Text Label 3300 3850 0    50   ~ 0
+PMOD1
+Text Label 3300 3750 0    50   ~ 0
+PMOD2
+Text Label 3300 3650 0    50   ~ 0
+PMOD3
+Wire Wire Line
+	3200 3650 3300 3650
+Wire Wire Line
+	3200 3750 3300 3750
+Wire Wire Line
+	3200 3850 3300 3850
+Wire Wire Line
+	3200 3950 3300 3950
+$Comp
+L agg:GND #PWR011
+U 1 1 5F21C96C
+P 2800 4900
+F 0 "#PWR011" H 2670 4940 50  0001 L CNN
+F 1 "GND" H 2800 4800 50  0000 C CNN
+F 2 "" H 2800 4900 50  0001 C CNN
+F 3 "" H 2800 4900 50  0001 C CNN
+	1    2800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4900 2800 4750
+Wire Wire Line
+	2800 4450 2900 4450
+Wire Wire Line
+	2900 4550 2800 4550
+Connection ~ 2800 4550
+Wire Wire Line
+	2800 4550 2800 4450
+Wire Wire Line
+	2800 4650 2900 4650
+Connection ~ 2800 4650
+Wire Wire Line
+	2800 4650 2800 4550
+Wire Wire Line
+	2900 4750 2800 4750
+Connection ~ 2800 4750
+Wire Wire Line
+	2800 4750 2800 4650
+Text Label 3300 4750 0    50   ~ 0
+PMOD4
+Text Label 3300 4650 0    50   ~ 0
+PMOD5
+Text Label 3300 4550 0    50   ~ 0
+PMOD6
+Text Label 3300 4450 0    50   ~ 0
+PMOD7
+Wire Wire Line
+	3200 4450 3300 4450
+Wire Wire Line
+	3200 4550 3300 4550
+Wire Wire Line
+	3200 4650 3300 4650
+Wire Wire Line
+	3200 4750 3300 4750
+Text Notes 2750 3300 0    50   ~ 0
+R/A sockets for\ndirect connection\nto Saleae
+Text Notes 3900 3300 0    50   ~ 0
+Vertical pins for\ncable connection\nto Saleae
+Text Notes 5050 3300 0    50   ~ 0
+Picoblade connectors\nfor non-PMOD targets
+Text Notes 6400 3300 0    50   ~ 0
+R/A pins for\nPMOD connection\nto target
+$Comp
+L agg:CONN_01x04 J7
+U 1 1 5F2AA999
+P 5600 3550
+F 0 "J7" H 5550 3650 50  0000 L CNN
+F 1 "UART" V 5500 3400 50  0000 C CNN
+F 2 "agg:MOLEX-PICOBLADE-53398-0471" H 5600 3550 50  0001 C CNN
+F 3 "" H 5600 3550 50  0001 C CNN
+F 4 "1125367" H 5600 3550 50  0001 C CNN "Farnell"
+	1    5600 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L agg:GND #PWR0102
+U 1 1 5F2B92DD
+P 5450 3900
+F 0 "#PWR0102" H 5320 3940 50  0001 L CNN
+F 1 "GND" H 5450 3800 50  0000 C CNN
+F 2 "" H 5450 3900 50  0001 C CNN
+F 3 "" H 5450 3900 50  0001 C CNN
+	1    5450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3900 5450 3850
+Wire Wire Line
+	5450 3850 5500 3850
+Wire Wire Line
+	5400 3650 5500 3650
+Wire Wire Line
+	5400 3750 5500 3750
+Text Label 5400 3650 2    50   ~ 0
+PMOD5
+Text Label 5400 3750 2    50   ~ 0
+PMOD6
+$Comp
+L agg:PWR #FLG0102
+U 1 1 5F1FF5C5
+P 6700 4700
+F 0 "#FLG0102" H 6700 4860 50  0001 C CNN
+F 1 "PWR" H 6700 4790 50  0001 C CNN
+F 2 "" H 6700 4700 50  0001 C CNN
+F 3 "" H 6700 4700 50  0001 C CNN
+	1    6700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg:GND #PWR0103
+U 1 1 5F20047B
+P 6700 4750
+F 0 "#PWR0103" H 6570 4790 50  0001 L CNN
+F 1 "GND" H 6700 4650 50  0000 C CNN
+F 2 "" H 6700 4750 50  0001 C CNN
+F 3 "" H 6700 4750 50  0001 C CNN
+	1    6700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4700 6700 4750
+NoConn ~ 6550 4450
+NoConn ~ 6850 4450
+NoConn ~ 5500 4300
+NoConn ~ 5500 3550
+$EndSCHEMATC
