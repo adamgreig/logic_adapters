@@ -176,6 +176,11 @@
       (net 2 /SWDIO))
     (pad 1 smd rect (at -2.54 2.035 90) (size 0.74 2.79) (layers F.Cu F.Paste F.Mask)
       (net 10 3v3))
+    (model ${KIPRJMOD}/FTSH-105-01-L-DV-K.stp
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module agg:FTSH-105-01-L-DV-K (layer F.Cu) (tedit 56889B32) (tstamp 5F1F8F9C)
@@ -228,6 +233,11 @@
       (net 2 /SWDIO))
     (pad 1 smd rect (at -2.54 2.035 90) (size 0.74 2.79) (layers F.Cu F.Paste F.Mask)
       (net 10 3v3))
+    (model ${KIPRJMOD}/FTSH-105-01-L-DV-K.stp
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module agg:DIL-254P-08 (layer F.Cu) (tedit 5F1F78DC) (tstamp 5F1F72C5)
